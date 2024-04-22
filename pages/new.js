@@ -6,18 +6,13 @@ import { View, Button, Text, TextInput, SafeAreaView, StyleSheet } from 'react-n
 import { useNavigation } from '@react-navigation/native';
 import { useState } from 'react';
 
-export default function Dashboard({route})
+export default function New()
 {
         const navigation = useNavigation();
-        const email = route.params.paramEmail;
 
         return (
             <SafeAreaView>
-                <Text>WELCOME TO DASHBOARD</Text>
-                <Text>{email}</Text>
-                <Button title="New Navigation" onPress={() => 
-                             navigation.navigate("New",{})} />
+                <Text>WELCOME TO NEW SCREEN</Text>
             </SafeAreaView>
         )
 }
-
